@@ -1,3 +1,3 @@
 # sphere-mini
 
-## Collaborators: Elijah Williams, Lunduk Sherpa
+## Collaborators: Elijah Williams, Lunduk Sherpa, Spyridon Kaperonis
