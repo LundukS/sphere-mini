@@ -1,4 +1,4 @@
-# Sphere Mini
+# Firebase Database
 
 ## Collaborators: Elijah Williams, Lunduk Sherpa, Spyridon Kaperonis
 
