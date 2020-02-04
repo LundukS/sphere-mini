@@ -3,6 +3,7 @@
 ## Collaborators: Elijah Williams, Lunduk Sherpa, Spyridon Kaperonis
 
 ![Firebase](https://firebase.google.com/images/social.png)
+This photo is taken from [https://firebase.google.com/images/social.png](https://firebase.google.com/images/social.png)
 
 [Elijah's GitHub Page](https://github.com/ekwilliams015)
    
@@ -15,3 +16,5 @@
 
 - [Firebase Guides](https://firebase.google.com/docs/guides)
 - [W3Schools](https://www.w3schools.com/)
+
+
