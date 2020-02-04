@@ -5,6 +5,9 @@
 ![Firebase](https://firebase.google.com/images/social.png)
 This photo is taken from [https://firebase.google.com/images/social.png](https://firebase.google.com/images/social.png)
 
+
+### GitHub Pages of Collaborators:
+
 [Elijah's GitHub Page](https://github.com/ekwilliams015)
    
 [Spyridon's GitHub Page](https://github.com/SpyridonKaperonis)
