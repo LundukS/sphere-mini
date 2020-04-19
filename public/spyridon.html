@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
     <div class="nav-bar">
@@ -13,11 +14,15 @@
         <li><a href="news.asp">News</a></li>
         <li><a href="contact.asp">Contact</a></li>
         <li><a href="about.asp">About</a></li>
+        <li>
+            <a href="#" id="logout">Logout</a>
+          </li>
+
       </ul> 
     </div>
 
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-    <img src="/images/firebaseLogo.jpg" alt="Firebase Logo">
+    <img src="images/firebaseLogo.jpg" alt="Firebase Logo">
   
     <h1>Firebase Realtime Database</h1>
     
@@ -37,4 +42,34 @@
     <p id="capabilities"></p>
 
     </div>
-</body>
+
+<!-- This is for user authentication in firebase. -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    const config = {
+  apiKey: "AIzaSyCwAr-nJuJn0mJIscC1F86qZmRChFdi29Y",
+  authDomain: "fir-2040d.firebaseapp.com",
+  databaseURL: "https://fir-2040d.firebaseio.com",
+  projectId: "fir-2040d",
+  storageBucket: "fir-2040d.appspot.com",
+  messagingSenderId: "136752573628",
+  appId: "1:136752573628:web:8586b89f6b0205a94634b9",
+  measurementId: "G-RG85WW4ZPF"
+};
+    firebase.initializeApp(config);
+    
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+  </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="scripts/logoutAuth.js"></script>
+  </body>
