@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Firebase Authentication</title>
+</head>
+
+<body class="grey lighten-3">
+
+  <body class="deep-orange lighten-5">
+
+    <!-- NAVBAR -->
+    <nav class="z-depth-0 grey lighten-4">
+      <nav class="nav-extended">
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">
+            <img src="public/images/firebaseLogo.jpg" style="width:180px ; margin-top: 10px;">
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            <li class="logged-out">
+              <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out">
+              <a href="#" class="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+            </li>
+            </span>
+          </ul>
+        </div>
+      </nav>
+      <!-- SIGN UP MODAL -->
+      <div id="modal-signup" class="modal">
+        <div class="modal-content">
+          <h4>Sign up</h4><br />
+          <form id="signup-form">
+            <div class="input-field">
+              <input type="email" id="signup-email" required />
+              <label for="signup-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="signup-password" required />
+              <label for="signup-password">Choose password</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+          </form>
+        </div>
+      </div>
+      <!-- LOGIN MODAL -->
+      <div id="modal-login" class="modal">
+        <div class="modal-content">
+          <h4>Login</h4><br />
+          <form id="login-form">
+            <div class="input-field">
+              <input type="email" id="login-email" required />
+              <label for="login-email">Email address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="login-password" required />
+              <label for="login-password">Your password</label>
+            </div>
+            <button class="btn yellow darken-2 z-depth-0">Login</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+      <script>
+        // Initialize Firebase
+        const config = {
+          apiKey: "AIzaSyCwAr-nJuJn0mJIscC1F86qZmRChFdi29Y",
+          authDomain: "fir-2040d.firebaseapp.com",
+          databaseURL: "https://fir-2040d.firebaseio.com",
+          projectId: "fir-2040d",
+          storageBucket: "fir-2040d.appspot.com",
+          messagingSenderId: "136752573628",
+          appId: "1:136752573628:web:8586b89f6b0205a94634b9",
+          measurementId: "G-RG85WW4ZPF"
+        };
+        firebase.initializeApp(config);
+
+        // make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        // update firestore settings
+        db.settings({ timestampsInSnapshots: true });
+      </script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="public/scripts/auth.js"></script>
+      <script src="public/scripts/index.js"></script>
+  </body>
+
+</html>
