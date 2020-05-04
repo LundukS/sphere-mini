@@ -27,7 +27,7 @@ signupForm.addEventListener('submit', (e) => {
     M.Modal.getInstance(modal).close();
     signupForm.reset();
 
-    window.location = 'public/spyridon.html';
+    window.location = 'public/home.html';
   });
 });
 

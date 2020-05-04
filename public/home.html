@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Firebase Authentication</title>
+  </head>
+
+  <body class="deep-orange lighten-5">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo center">
+            <img src="images/google-logo-png-svg-10.png.png">
+          </a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="/public/spyridon.html">Realtime Database</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li class="active"><a href="authentication.html">Authentication</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">
+              
+          </a>
+      </div>
+      <!--    
+      <script>
+        retrietve(){
+          const images = firebase.storage().ref().child('logo');
+          const image = images.child('firebaseLogo');
+          image.getDownloadURL().then((url) => { this.setState( {img: url} ));
+        };
+        
+      </script>
+
+       -->
+       <script>
+         const config = {
+            apiKey: "AIzaSyCwAr-nJuJn0mJIscC1F86qZmRChFdi29Y",
+            authDomain: "fir-2040d.firebaseapp.com",
+            databaseURL: "https://fir-2040d.firebaseio.com",
+            projectId: "fir-2040d",
+            storageBucket: "fir-2040d.appspot.com",
+            messagingSenderId: "136752573628",
+            appId: "1:136752573628:web:8586b89f6b0205a94634b9",
+            measurementId: "G-RG85WW4ZPF"
+          };
+          firebase.initializeApp(config);
+       </script>
+
+       <pre id="object">
+
+      </pre>
+      <script src="database.js"></script>
+      
+      
+      
+  </body>
